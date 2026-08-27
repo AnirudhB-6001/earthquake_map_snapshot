@@ -9,7 +9,9 @@ type Earthquake = {
     latitude: number;
 };
 
-const providerFeatures: unknown[] = [
+const providerResponse: unknown = {
+  type: "FeatureCollection",
+  features: [
   {
     id: "example-1",
     properties: {
@@ -36,7 +38,8 @@ const providerFeatures: unknown[] = [
       coordinates: [-122.4, 37.8, 8],
     },
   },
-];
+  ],
+};
 
 
 function parseEarthquake(value: unknown): Earthquake {
@@ -145,6 +148,18 @@ function parseEarthquake(value: unknown): Earthquake {
     };
 }
 
+function parseProviderResponse(value: unknown): Earthquake[] {
+  if (typeof value !== "object" || value === null) {
+    throw new Error("USGS response must be an object");
+  }
+
+  if (!("features" in value) || !Array.isArray(value.features)) {
+    throw new Error("USGS response must have a features array");
+  }
+
+  return value.features.map(parseEarthquake);
+}
+
 function compareEarthquakes(a: Earthquake, b: Earthquake): number {
   if (a.occurredAt > b.occurredAt) return -1;
   if (a.occurredAt < b.occurredAt) return 1;
@@ -180,7 +195,7 @@ function featuresToCollection(features: ReturnType<typeof earthquakeToFeature>[]
   };
 }
 
-const earthquakes = providerFeatures.map(parseEarthquake);
+const earthquakes = parseProviderResponse(providerResponse);
 
 const sortedEarthquakes = [...earthquakes].sort(compareEarthquakes);
 
