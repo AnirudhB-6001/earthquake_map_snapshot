@@ -89,3 +89,28 @@ test("produces an empty FeatureCollection for an empty valid response", () => {
     features: [],
   });
 });
+
+test("rejects malformed provider data", () => {
+  const providerResponse = {
+    type: "FeatureCollection",
+    features: [
+      {
+        id: "broken",
+        properties: {
+          mag: "not-a-number",
+          place: "Broken earthquake",
+          time: 1787639400000,
+          url: "https://example.com/broken",
+        },
+        geometry: {
+          type: "Point",
+          coordinates: [142.3, 38.1, 12],
+        },
+      },
+    ],
+  };
+
+  assert.throws(() => {
+    parseProviderResponse(providerResponse);
+  });
+});
