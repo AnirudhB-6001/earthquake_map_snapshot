@@ -1,0 +1,815 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tn80",
+        "magnitude": 5,
+        "place": "209 km NNE of Lospalos, Timor Leste",
+        "occurredAt": "2026-08-24T19:00:03.416Z",
+        "depthKm": 9.947,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tn80"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.5019,
+          -6.6912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tn41",
+        "magnitude": 6,
+        "place": "215 km NNE of Lospalos, Timor Leste",
+        "occurredAt": "2026-08-24T14:10:17.299Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tn41"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.4598,
+          -6.6264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tn3t",
+        "magnitude": 5,
+        "place": "southern Mid-Atlantic Ridge",
+        "occurredAt": "2026-08-24T12:29:31.627Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tn3t"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.8368,
+          -17.7036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tn33",
+        "magnitude": 5.5,
+        "place": "207 km SSE of Amahai, Indonesia",
+        "occurredAt": "2026-08-24T10:02:58.888Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tn33"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          129.6871,
+          -5.0525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tn19",
+        "magnitude": 5,
+        "place": "Rat Islands, Aleutian Islands, Alaska",
+        "occurredAt": "2026-08-23T23:20:35.668Z",
+        "depthKm": 13.186,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tn19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          176.3834,
+          52.1941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tn0t",
+        "magnitude": 5.3,
+        "place": "120 km W of Lata, Solomon Islands",
+        "occurredAt": "2026-08-23T21:32:20.775Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tn0t"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          164.6977,
+          -10.6943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tn0s",
+        "magnitude": 5.2,
+        "place": "61 km NE of Ruteng, Indonesia",
+        "occurredAt": "2026-08-23T21:20:15.767Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tn0s"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.8354,
+          -8.1992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmz6",
+        "magnitude": 6,
+        "place": "33 km SSW of Honchō, Japan",
+        "occurredAt": "2026-08-23T13:44:53.514Z",
+        "depthKm": 42.867,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmz6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.8255,
+          41.8344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmyk",
+        "magnitude": 5.3,
+        "place": "southern Mid-Atlantic Ridge",
+        "occurredAt": "2026-08-23T11:22:41.913Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmyk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -14.8524,
+          -12.8299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmxn",
+        "magnitude": 5.2,
+        "place": "124 km ESE of Kirakira, Solomon Islands",
+        "occurredAt": "2026-08-23T08:12:38.133Z",
+        "depthKm": 120.328,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmxn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          162.9618,
+          -10.9015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmta",
+        "magnitude": 5.8,
+        "place": "4 km N of Toride, Japan",
+        "occurredAt": "2026-08-22T17:00:39.472Z",
+        "depthKm": 61,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.0778,
+          35.9375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmrw",
+        "magnitude": 6.2,
+        "place": "Scotia Sea",
+        "occurredAt": "2026-08-22T08:22:37.740Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmrw"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.6047,
+          -60.3789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmrn",
+        "magnitude": 5.7,
+        "place": "Scotia Sea",
+        "occurredAt": "2026-08-22T07:40:12.697Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmrn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -47.2591,
+          -60.2649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmrf",
+        "magnitude": 5,
+        "place": "45 km SE of Lukatan, Philippines",
+        "occurredAt": "2026-08-22T06:43:39.032Z",
+        "depthKm": 107.802,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmrf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.7362,
+          6.7397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmr2",
+        "magnitude": 5,
+        "place": "6 km S of Kitcharao, Philippines",
+        "occurredAt": "2026-08-22T04:44:08.744Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmr2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.5805,
+          9.3981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmq6",
+        "magnitude": 5.3,
+        "place": "southern Mid-Atlantic Ridge",
+        "occurredAt": "2026-08-22T01:34:57.606Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmq6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -14.8824,
+          -12.7714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmq5",
+        "magnitude": 5.2,
+        "place": "38 km NNE of Ruteng, Indonesia",
+        "occurredAt": "2026-08-22T01:30:59.335Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmq5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5614,
+          -8.2752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmlu",
+        "magnitude": 5.7,
+        "place": "194 km SW of Labuan, Indonesia",
+        "occurredAt": "2026-08-21T17:41:44.453Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmlu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.5501,
+          -7.5836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmft",
+        "magnitude": 5.4,
+        "place": "South Sandwich Islands region",
+        "occurredAt": "2026-08-21T13:06:40.821Z",
+        "depthKm": 158.986,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmft"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -26.5571,
+          -58.8509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmfe",
+        "magnitude": 5.4,
+        "place": "148 km SSE of Tateyama, Japan",
+        "occurredAt": "2026-08-21T12:02:07.072Z",
+        "depthKm": 61.666,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmfe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.3802,
+          33.7171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmes",
+        "magnitude": 5.1,
+        "place": "1 km N of Alegria, Philippines",
+        "occurredAt": "2026-08-21T09:22:36.390Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.5784,
+          9.4833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmer",
+        "magnitude": 5.2,
+        "place": "19 km W of Jabonga, Philippines",
+        "occurredAt": "2026-08-21T09:12:20.890Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          125.342,
+          9.3382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmei",
+        "magnitude": 5.1,
+        "place": "south of Tonga",
+        "occurredAt": "2026-08-21T08:12:34.179Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmei"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -175.3072,
+          -24.7124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tmbw",
+        "magnitude": 5,
+        "place": "Pacific-Antarctic Ridge",
+        "occurredAt": "2026-08-20T23:36:41.054Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tmbw"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -141.4541,
+          -56.5921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tm9h",
+        "magnitude": 5,
+        "place": "78 km NNW of Ende, Indonesia",
+        "occurredAt": "2026-08-20T19:53:51.824Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm9h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3299,
+          -8.214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tm93",
+        "magnitude": 5,
+        "place": "63 km NW of Ende, Indonesia",
+        "occurredAt": "2026-08-20T19:24:03.495Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm93"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.2709,
+          -8.423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tm8j",
+        "magnitude": 5.1,
+        "place": "183 km SE of Kokopo, Papua New Guinea",
+        "occurredAt": "2026-08-20T18:25:19.502Z",
+        "depthKm": 35,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm8j"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.5631,
+          -5.3709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tm8h",
+        "magnitude": 5.6,
+        "place": "67 km NNW of Ende, Indonesia",
+        "occurredAt": "2026-08-20T18:12:51.721Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm8h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.3981,
+          -8.2877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tm81",
+        "magnitude": 6.7,
+        "place": "31 km NW of Aniso, Peru",
+        "occurredAt": "2026-08-20T18:00:18.626Z",
+        "depthKm": 99,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm81"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5236,
+          -14.6414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tm2y",
+        "magnitude": 5.2,
+        "place": "270 km SSE of Dunhuang, China",
+        "occurredAt": "2026-08-20T09:49:47.975Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm2y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.4454,
+          37.8058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tm2v",
+        "magnitude": 5.3,
+        "place": "48 km NNE of Ruteng, Indonesia",
+        "occurredAt": "2026-08-20T09:30:52.720Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm2v"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6701,
+          -8.2215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tm2k",
+        "magnitude": 5,
+        "place": "43 km N of Ruteng, Indonesia",
+        "occurredAt": "2026-08-20T08:01:33.945Z",
+        "depthKm": 35,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm2k"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4879,
+          -8.2196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tm2j",
+        "magnitude": 5,
+        "place": "37 km NNW of Ruteng, Indonesia",
+        "occurredAt": "2026-08-20T07:55:03.208Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm2j"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.377,
+          -8.2868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tm1j",
+        "magnitude": 5.7,
+        "place": "32 km NNE of Ruteng, Indonesia",
+        "occurredAt": "2026-08-20T02:46:59.072Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm1j"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6104,
+          -8.3582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tm16",
+        "magnitude": 5,
+        "place": "87 km S of Isangel, Vanuatu",
+        "occurredAt": "2026-08-20T00:20:24.938Z",
+        "depthKm": 72.946,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          169.1514,
+          -20.324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tm0u",
+        "magnitude": 5.8,
+        "place": "25 km NNE of Ruteng, Indonesia",
+        "occurredAt": "2026-08-19T22:45:17.395Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm0u"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.5278,
+          -8.3922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tm0s",
+        "magnitude": 5.2,
+        "place": "33 km N of Ruteng, Indonesia",
+        "occurredAt": "2026-08-19T22:28:08.388Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tm0s"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4718,
+          -8.3101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tlz8",
+        "magnitude": 5.4,
+        "place": "216 km E of Levuka, Fiji",
+        "occurredAt": "2026-08-19T18:45:29.787Z",
+        "depthKm": 557.465,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tlz8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -178.664,
+          -17.7629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tlyv",
+        "magnitude": 5.4,
+        "place": "134 km S of Severo-Kuril’sk, Russia",
+        "occurredAt": "2026-08-19T18:07:17.251Z",
+        "depthKm": 41.176,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tlyv"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          155.8633,
+          49.4799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tlxq",
+        "magnitude": 5.5,
+        "place": "52 km NNE of Ruteng, Indonesia",
+        "occurredAt": "2026-08-19T16:17:38.400Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tlxq"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6643,
+          -8.1769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tlt9",
+        "magnitude": 5.2,
+        "place": "66 km NNW of Ende, Indonesia",
+        "occurredAt": "2026-08-19T03:13:29.805Z",
+        "depthKm": 30.365,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tlt9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4389,
+          -8.2837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tlrj",
+        "magnitude": 5.5,
+        "place": "269 km SSE of Dunhuang, China",
+        "occurredAt": "2026-08-18T21:36:27.999Z",
+        "depthKm": 6,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tlrj"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          95.5438,
+          37.8333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tlqq",
+        "magnitude": 5.3,
+        "place": "35 km SSW of Jurm, Afghanistan",
+        "occurredAt": "2026-08-18T19:51:09.478Z",
+        "depthKm": 195.937,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tlqq"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.7551,
+          36.5535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tlkt",
+        "magnitude": 5.6,
+        "place": "154 km SSE of Teluk Dalam, Indonesia",
+        "occurredAt": "2026-08-18T06:02:20.229Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tlkt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.416,
+          -0.6858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "us6000tlkl",
+        "magnitude": 5.7,
+        "place": "95 km SW of Puerto Madero, Mexico",
+        "occurredAt": "2026-08-18T05:02:32.244Z",
+        "depthKm": 10,
+        "sourceUrl": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tlkl"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.1475,
+          14.2298
+        ]
+      }
+    }
+  ]
+}
