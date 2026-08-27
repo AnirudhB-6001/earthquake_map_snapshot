@@ -41,6 +41,18 @@ const providerResponse: unknown = {
   ],
 };
 
+async function fetchProviderResponse(): Promise<unknown> {
+  const url =
+    "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-18&endtime=2026-08-25&minmagnitude=5&eventtype=earthquake";
+
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    throw new Error(`USGS request failed with status ${response.status}`);
+  }
+
+  return response.json();
+}
 
 function parseEarthquake(value: unknown): Earthquake {
     if (typeof value !== "object" || value === null) {
@@ -195,12 +207,18 @@ function featuresToCollection(features: ReturnType<typeof earthquakeToFeature>[]
   };
 }
 
-const earthquakes = parseProviderResponse(providerResponse);
+async function main() {
+  const liveResponse = await fetchProviderResponse();
 
-const sortedEarthquakes = [...earthquakes].sort(compareEarthquakes);
+  const earthquakes = parseProviderResponse(liveResponse);
 
-const features = sortedEarthquakes.map(earthquakeToFeature);
+  const sortedEarthquakes = [...earthquakes].sort(compareEarthquakes);
 
-const featureCollection = featuresToCollection(features);
+  const features = sortedEarthquakes.map(earthquakeToFeature);
 
-console.log(JSON.stringify(featureCollection, null, 2));
+  const featureCollection = featuresToCollection(features);
+
+  console.log(JSON.stringify(featureCollection, null, 2));
+}
+
+main();
