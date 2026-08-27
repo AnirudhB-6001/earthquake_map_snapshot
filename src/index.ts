@@ -1,3 +1,5 @@
+import { writeFile } from "node:fs/promises";
+
 type Earthquake = {
     id: string;
     magnitude: number;
@@ -218,7 +220,11 @@ async function main() {
 
   const featureCollection = featuresToCollection(features);
 
-  console.log(JSON.stringify(featureCollection, null, 2));
+  const output = JSON.stringify(featureCollection, null, 2) + "\n";
+
+  await writeFile("earthquakes.geojson", output, "utf8");
+
+  console.log("Wrote earthquakes.geojson");
 }
 
 main();
