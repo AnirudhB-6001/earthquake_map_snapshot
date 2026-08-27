@@ -133,11 +133,17 @@ const providerResponse: unknown = {
   ],
 };
 
-async function fetchProviderResponse(): Promise<unknown> {
-  const url =
-    "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-08-18&endtime=2026-08-25&minmagnitude=5&eventtype=earthquake";
+async function fetchProviderResponse(options: CliOptions): Promise<unknown> {
 
-  const response = await fetch(url);
+    const url = new URL("https://earthquake.usgs.gov/fdsnws/event/1/query");
+
+    url.searchParams.set("format", "geojson");
+    url.searchParams.set("starttime", options.start);
+    url.searchParams.set("endtime", options.end);
+    url.searchParams.set("minmagnitude", String(options.minMagnitude));
+    url.searchParams.set("eventtype", "earthquake");
+
+    const response = await fetch(url);
 
   if (!response.ok) {
     throw new Error(`USGS request failed with status ${response.status}`);
@@ -304,7 +310,7 @@ async function main() {
     const options = parseCliOptions(process.argv.slice(2));
     console.log(options);
 
-  const liveResponse = await fetchProviderResponse();
+  const liveResponse = await fetchProviderResponse(options);
 
   const earthquakes = parseProviderResponse(liveResponse);
 
@@ -316,9 +322,9 @@ async function main() {
 
   const output = JSON.stringify(featureCollection, null, 2) + "\n";
 
-  await writeFile("earthquakes.geojson", output, "utf8");
+  await writeFile(options.output, output, "utf8");
 
-  console.log("Wrote earthquakes.geojson");
+  console.log(`Wrote ${options.output}`);
 }
 
 main().catch((error: unknown) => {
