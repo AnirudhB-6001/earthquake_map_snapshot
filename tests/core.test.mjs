@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 
 import {
   compareEarthquakes,
+  parseProviderResponse,
   earthquakeToFeature,
   featuresToCollection,
   parseEarthquake,
@@ -71,4 +72,20 @@ test("transforms multiple earthquakes into deterministic GeoJSON", () => {
   assert.equal(collection.features[0].properties.magnitude, 6.1);
   assert.deepEqual(collection.features[0].geometry.coordinates, [-122.4, 37.8]);
   assert.equal(collection.features[1].properties.id, "older");
+});
+
+test("produces an empty FeatureCollection for an empty valid response", () => {
+  const providerResponse = {
+    type: "FeatureCollection",
+    features: [],
+  };
+
+  const earthquakes = parseProviderResponse(providerResponse);
+  const features = earthquakes.map(earthquakeToFeature);
+  const collection = featuresToCollection(features);
+
+  assert.deepEqual(collection, {
+    type: "FeatureCollection",
+    features: [],
+  });
 });
