@@ -9,24 +9,35 @@ type Earthquake = {
     latitude: number;
 };
 
-const providerFeature: unknown = {
+const providerFeatures: unknown[] = [
+  {
     id: "example-1",
     properties: {
-        mag: 5.4,
-        place: "Example earthquake",
-        time: 1787639400000,
-        url: "https://example.com/earthquake/example-1",
+      mag: 5.4,
+      place: "Example earthquake",
+      time: 1787639400000,
+      url: "https://example.com/earthquake/example-1",
     },
     geometry: {
-        type: "Point",
-        coordinates: [142.3, 38.1, 12],
+      type: "Point",
+      coordinates: [142.3, 38.1, 12],
     },
-};
+  },
+  {
+    id: "example-2",
+    properties: {
+      mag: 6.1,
+      place: "Second example earthquake",
+      time: 1787643000000,
+      url: "https://example.com/earthquake/example-2",
+    },
+    geometry: {
+      type: "Point",
+      coordinates: [-122.4, 37.8, 8],
+    },
+  },
+];
 
-console.log(providerFeature);
-if (typeof providerFeature === "object" && providerFeature !== null) {
-    console.log("providerFeature is an object");
-}
 
 function parseEarthquake(value: unknown): Earthquake {
     if (typeof value !== "object" || value === null) {
@@ -134,6 +145,16 @@ function parseEarthquake(value: unknown): Earthquake {
     };
 }
 
+function compareEarthquakes(a: Earthquake, b: Earthquake): number {
+  if (a.occurredAt > b.occurredAt) return -1;
+  if (a.occurredAt < b.occurredAt) return 1;
+
+  if (a.id < b.id) return -1;
+  if (a.id > b.id) return 1;
+
+  return 0;
+}
+
 function earthquakeToFeature(earthquake: Earthquake) {
   return {
     type: "Feature",
@@ -152,10 +173,19 @@ function earthquakeToFeature(earthquake: Earthquake) {
   };
 }
 
-const earthquake = parseEarthquake(providerFeature);
+function featuresToCollection(features: ReturnType<typeof earthquakeToFeature>[]) {
+  return {
+    type: "FeatureCollection",
+    features,
+  };
+}
 
-const feature = earthquakeToFeature(earthquake);
+const earthquakes = providerFeatures.map(parseEarthquake);
 
-console.log(feature);
+const sortedEarthquakes = [...earthquakes].sort(compareEarthquakes);
 
-console.log(earthquake);
+const features = sortedEarthquakes.map(earthquakeToFeature);
+
+const featureCollection = featuresToCollection(features);
+
+console.log(JSON.stringify(featureCollection, null, 2));
