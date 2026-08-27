@@ -114,3 +114,14 @@ test("rejects malformed provider data", () => {
     parseProviderResponse(providerResponse);
   });
 });
+
+test("rejects a response that is not a FeatureCollection", () => {
+  const providerResponse = {
+    type: "WrongType",
+    features: [],
+  };
+
+  assert.throws(() => {
+    parseProviderResponse(providerResponse);
+  });
+});

@@ -120,6 +120,10 @@ export function parseProviderResponse(value: unknown): Earthquake[] {
     throw new Error("USGS response must be an object");
   }
 
+  if (!("type" in value) || value.type !== "FeatureCollection") {
+    throw new Error("USGS response must be a FeatureCollection");
+  }
+
   if (!("features" in value) || !Array.isArray(value.features)) {
     throw new Error("USGS response must have a features array");
   }
@@ -128,36 +132,36 @@ export function parseProviderResponse(value: unknown): Earthquake[] {
 }
 
 export function compareEarthquakes(a: Earthquake, b: Earthquake): number {
-  if (a.occurredAt > b.occurredAt) return -1;
-  if (a.occurredAt < b.occurredAt) return 1;
+    if (a.occurredAt > b.occurredAt) return -1;
+    if (a.occurredAt < b.occurredAt) return 1;
 
-  if (a.id < b.id) return -1;
-  if (a.id > b.id) return 1;
+    if (a.id < b.id) return -1;
+    if (a.id > b.id) return 1;
 
-  return 0;
+    return 0;
 }
 
 export function earthquakeToFeature(earthquake: Earthquake) {
-  return {
-    type: "Feature",
-    properties: {
-      id: earthquake.id,
-      magnitude: earthquake.magnitude,
-      place: earthquake.place,
-      occurredAt: earthquake.occurredAt,
-      depthKm: earthquake.depthKm,
-      sourceUrl: earthquake.sourceUrl,
-    },
-    geometry: {
-      type: "Point",
-      coordinates: [earthquake.longitude, earthquake.latitude],
-    },
-  };
+    return {
+        type: "Feature",
+        properties: {
+            id: earthquake.id,
+            magnitude: earthquake.magnitude,
+            place: earthquake.place,
+            occurredAt: earthquake.occurredAt,
+            depthKm: earthquake.depthKm,
+            sourceUrl: earthquake.sourceUrl,
+        },
+        geometry: {
+            type: "Point",
+            coordinates: [earthquake.longitude, earthquake.latitude],
+        },
+    };
 }
 
 export function featuresToCollection(features: ReturnType<typeof earthquakeToFeature>[]) {
-  return {
-    type: "FeatureCollection",
-    features,
-  };
+    return {
+        type: "FeatureCollection",
+        features,
+    };
 }

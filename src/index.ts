@@ -12,43 +12,10 @@ import type { CliOptions } from "./cli.js";
 
 import { fetchProviderResponse } from "./api.js";
 
-const providerResponse: unknown = {
-  type: "FeatureCollection",
-  features: [
-  {
-    id: "example-1",
-    properties: {
-      mag: 5.4,
-      place: "Example earthquake",
-      time: 1787639400000,
-      url: "https://example.com/earthquake/example-1",
-    },
-    geometry: {
-      type: "Point",
-      coordinates: [142.3, 38.1, 12],
-    },
-  },
-  {
-    id: "example-2",
-    properties: {
-      mag: 6.1,
-      place: "Second example earthquake",
-      time: 1787643000000,
-      url: "https://example.com/earthquake/example-2",
-    },
-    geometry: {
-      type: "Point",
-      coordinates: [-122.4, 37.8, 8],
-    },
-  },
-  ],
-};
-
 
 async function main() {
 
-    const options = parseCliOptions(process.argv.slice(2));
-    console.log(options);
+  const options = parseCliOptions(process.argv.slice(2));
 
   const liveResponse = await fetchProviderResponse(options);
 
